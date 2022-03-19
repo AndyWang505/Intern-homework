@@ -112,7 +112,7 @@ table {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    background-image: url(/images/Banner.png);
+    background-image: url(../images/Banner.png);
     height: 346px;
 }
 .banner-text{
