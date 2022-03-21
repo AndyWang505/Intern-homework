@@ -22,12 +22,12 @@
             </div>
             <div class="navbar">
                 <div class="navbar-logo">
-                    <img src="../images/header-logo.png" alt="">
+                    <a href="./index.html"><img src="../images/header-logo.png" alt=""></a>
                 </div>
                 <ul class="navbar-list">
-                    <li><a href="">首頁</a></li>
-                    <li><a href="">產品介紹</a></li>
-                    <li><a href="">聯絡我們</a></li>
+                    <li class="navStyle-active"><a href="./index.html">首頁</a></li>
+                    <li class="navStyle"><a href="#">產品介紹</a></li>
+                    <li class="navStyle"><a href="#">聯絡我們</a></li>
                 </ul>
             </div>
         </header>
@@ -69,31 +69,79 @@
                     </li>
                 </ul>
             </div>
-            <div class="table">
+            <div class="mainTable">
                 <h2>線上及實體課程的差異</h2>
                 <table>
                     <thead>
                         <tr>
-                            <td>1</td>
-                            <td>2</td>
-                            <td>3</td>
+                            <th>項目</th>
+                            <th>Hex School 線上課程</th>
+                            <th>一般線上課程</th>
+                            <th>實體課程</th>
                         </tr>
                     </thead>
                     <tbody>
                         <tr>
-                            <td>1</td>
-                            <td>2</td>
-                            <td>3</td>
+                            <th>費用</th>
+                            <td class="mainTable-textStyle">較低</td>
+                            <td class="mainTable-textStyle">較低</td>
+                            <td>較高</td>
+                        </tr>
+                        <tr>
+                            <th>學習效果</th>
+                            <td>一般</td>
+                            <td class="mainTable-textStyle">較低</td>
+                            <td class="mainTable-textStyle">很好</td>
+                        </tr>
+                        <tr>
+                            <th>Code review</th>
+                            <td class="mainTable-textStyle">有</td>
+                            <td>無</td>
+                            <td>不一定</td>
+                        </tr>
+                        <tr>
+                            <th>課程更新速度</th>
+                            <td class="mainTable-textStyle">普通</td>
+                            <td class="mainTable-textStyle">普通</td>
+                            <td>較慢</td>
+                        </tr>
+                        <tr>
+                            <th>多次複習</th>
+                            <td class="mainTable-textStyle">可</td>
+                            <td>可</td>
+                            <td>不可</td>
+                        </tr>
+                        <tr>
+                            <th>字幕</th>
+                            <td class="mainTable-textStyle">有</td>
+                            <td>不一定</td>
+                            <td>板書</td>
                         </tr>
                     </tbody>
                 </table>
             </div>
-            <div class="from"></div>
+            <div class="mainForm">
+                <h2>對我們課程有興趣嗎？<br>歡迎留下您的資料</h2>
+                <div class="formBlock">
+                    <textarea name="content" id="content" cols="30" rows="10" placeholder="請留下您寶貴的意見"></textarea>
+                    <form action="index.html">
+                        <label for="name">姓名</label>
+                        <input type="text" name="name" id="name" placeholder="請輸入姓名">
+                        <label for="phone">電話</label>
+                        <input type="phone" name="phone" id="phone" placeholder="請輸入電話">
+                        <label for="email">信箱</label>
+                        <input type="email" name="email" id="email" placeholder="請輸入電子信箱">
+                        <div class="submit">
+                            <input type="submit" value="送出">
+                        </div>
+                    </form>
+                </div>
+            </div>
         </main>
         <footer>
-            <div class="footer">
+            <div class="footerBlock">
                 <img src="../images/footer-logo.png" alt="">
-                <div class="footer-contact">聯絡我們: 電話:</div>
+                <div class="footer-connact">聯絡我們：<a href="mailto:hexschool@gmail.com">hexschool@gmail.com</a><br>電話：<a href="tel:0999123456">0999123456</a></div>
             </div>
         </footer>
     </div>

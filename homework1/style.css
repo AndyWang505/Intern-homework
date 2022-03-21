@@ -50,9 +50,13 @@ table {
 	border-spacing: 0;
 }
 /* ---------layout--------- */
-/* header{
+header{
+    width: 1000px;
     position: fixed;
-} */
+}
+body{
+    font-family: Microsoft JhengHei;
+}
 .wrap{
     width: 1000px;
     margin: auto;
@@ -65,7 +69,7 @@ table {
 }
 .navbar{
     padding: 0 0 0 21px;
-    border-color: #ffff;
+    background-color: #ffff;
     box-shadow:0px 10px 10px -15px #000;
 }
 .navbar-list{
@@ -77,6 +81,29 @@ table {
 .course-list{
     display: flex;
     justify-content: space-evenly;
+}
+table{
+    margin: auto;
+    width: 840px;
+}
+form{
+    display: flex;
+    flex-direction: column;
+}
+.formBlock{
+    display: flex;
+    justify-content: space-evenly;
+}
+.submit{
+    display: flex;
+    justify-content: right;
+}
+footer{
+    margin-top: 26px;
+}
+.footerBlock{
+    display: flex;
+    justify-content: space-between;
 }
 /* ---------element--------- */
 .topbar-hr{
@@ -100,6 +127,11 @@ table {
 .navbar-list li{
     margin: 0 15px 0 15px;
     padding: 17px 10px 18px 10px;
+}
+.navStyle{
+    border-bottom: none;
+}
+.navStyle-active{
     border-bottom: 3px solid #00cc99;
 }
 .navbar-list li a{
@@ -153,4 +185,76 @@ table {
     justify-content: center;
     flex-wrap: wrap;
     align-items: center;
+}
+.mainTable h2{
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    margin: 64px auto 30px auto;
+}
+table thead{
+    background-color: #f7f7f7;
+    font-weight: bold;
+}
+table th,td{
+    border-top: 1px solid #dddd;
+    border-bottom: 1px solid #dddd;
+    font-size: 15px;
+    padding: 8px 0 12px 22px;
+}
+.mainTable-textStyle{
+    color: #00a67d;
+}
+.mainForm{
+    background-image: linear-gradient(0deg, 
+    #009872 0%, 
+    #00644b 100%);
+}
+.mainForm h2{
+    margin-top: 60px;
+    padding: 38px 0 32px 0;
+    line-height: 36px;
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+}
+textarea{
+    width: 460px;
+    height: 245px;
+    border-radius: 3px;
+    border: 1px solid #e1e1e1;
+    padding: 15px;
+    margin-bottom: 30px;
+}
+form input{
+    width: 460px;
+    padding: 8px;
+    margin-bottom: 16px;
+    border-radius: 3px;
+    border: 1px solid #e1e1e1;
+    font-size: 15px;
+}
+form label{
+    margin-bottom: 5px;
+    font-size: 15px;
+    color: white;
+}
+.submit input{
+    width: 70px;
+    height: 32px;
+    color: white;
+    background-color: #00cc99;
+    border: none;
+}
+.footerBlock img{
+    margin: 0 0 58px 21px;
+    width: 170px;
+}
+.footer-connact{
+    font-size: 15px;
+    line-height: 24px;
+}
+.footer-connact a{
+    color: #e12d80;
 }
