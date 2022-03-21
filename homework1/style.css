@@ -52,7 +52,7 @@ table {
 /* ---------layout--------- */
 header{
     width: 1000px;
-    position: fixed;
+    /* position: fixed; */
 }
 body{
     font-family: Microsoft JhengHei;
