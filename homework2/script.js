@@ -19,5 +19,21 @@ $(document).ready(function(){
         $(".dropdown").toggleClass("active");
         $(".dropdown-open").slideToggle();
     });
-
+    //lightbox
+    lightbox.option({
+        'resizeDuration': 200,
+        'wrapAround': true
+    });
+});
+//swiper
+var swiper = new Swiper(".mySwiper", {
+    loop: true,
+    speed: 1000,
+    autoplay: {
+        delay: 4000,
+    },
+    navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+    },
 });

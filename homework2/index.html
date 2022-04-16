@@ -7,7 +7,10 @@
     <title>六角學院首頁</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
-    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <!-- swiper cdn -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
+    <!-- lightbox -->
+    <link rel="stylesheet" href="./lightbox.css">
     <link rel="stylesheet" href="./style.css">
 </head>
 <body>
@@ -41,16 +44,39 @@
             </div>
         </header>
         <main>
-            <div class="banner">
-                <div class="banner-text">
-                    <h1>六角學院<br>讓您奠定良好基礎</h1>
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="banner1">
+                            <div class="banner-text">
+                                <h1>六角學院<br>讓您奠定良好基礎</h1>
+                            </div>
+                        </div>   
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="banner2">
+                            <div class="banner-text">
+                                <h1>線上直播班<br>前端入門到進階</h1>
+                            </div>
+                        </div>   
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="banner3">
+                            <div class="banner-text">
+                                <h1>學習心法<br>UI設計切版一應俱全</h1>
+                            </div>
+                        </div>   
+                    </div>
                 </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
             </div>
             <div class="course">
                 <ul class="course-list">
                     <li class="course-listItem">
                         <div class="course-listItem-img">
-                            <img class="course-listItem1" src="../images/HTML5.png" alt="">
+                            <a class="example-image-link" href="../images/HTML5.png" data-lightbox="image-1" data-title="HTML5"><img class="example-image course-listItem1" src="../images/HTML5.png" alt="image-1" /></a>
+                            <!-- <img class="course-listItem1" src="../images/HTML5.png" alt=""> -->
                         </div>
                         <h2>Html 5 基礎教學</h2>
                         <p>主流前端網站設計的基礎就在六角學院，在這裡不在是填鴨式教學，而是透過實際的範例，瞭解正確的網站開發流程，講師均具有業界開發經驗，讓學員學習業界主流的開發方法。</p>
@@ -58,14 +84,16 @@
                     </li>
                     <li class="course-listItem">
                         <div class="course-listItem-img">
-                            <img src="../images/RWD.png" alt="">
+                            <a href="../images/RWD.png" data-lightbox="image-2" data-title="RWD"><img class="example-image" src="../images/RWD.png" alt="image-2" /></a>
+                            <!-- <img src="../images/RWD.png" alt=""> -->
                         </div>
                         <h2>響應式網站設計</h2>
                         <p>響 應 式 網 站 設 計 (Responsive web design)，目前大多使用者均是以手機瀏覽的情況下，響應式網站已經是必備的。六角學院將會提供業界響應式開發方法，讓學生瞭解行動版開發技巧。</p>
                     </li>
                     <li class="course-listItem">
                         <div class="course-listItem-img">
-                            <img src="../images/jQuery.png" alt="">
+                            <a href="../images/jQuery.png" data-lightbox="image-3" data-title="jQuery"><img class="example-image" src="../images/jQuery.png" alt="image-3" /></a>
+                            <!-- <img src="../images/jQuery.png" alt=""> -->
                         </div>
                         <h2>jQuery 實戰教學</h2>
                         <p>本課程有以下特色</p>
@@ -158,7 +186,10 @@
         <a href=""><img src="../images/GoToTop icon.png" alt=""></a>
     </div>
     <script src="./jquery-3.6.0.min.js"></script>
-    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <!-- swiper cdn -->
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <!-- lightbox cdn -->
+    <script src="./lightbox-plus-jquery.min.js"></script>
     <script src="./script.js"></script>
 </body>
 </html>

@@ -145,6 +145,7 @@ footer{
     margin: 10px 0 0 0;
 }
 .dropdown-open{
+    z-index: 999;
     position: absolute;
     top: auto;
     left: 0;
@@ -163,11 +164,25 @@ footer{
 .navbar-list li a:hover{
     color:black;
 }
-.banner{
+.banner1{
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     background-image: url(../images/Banner.png);
+    height: 346px;
+}
+.banner2{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    background-image: url(https://images.unsplash.com/photo-1542831371-29b0f74f9713?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8Y29kaW5nfGVufDB8fDB8fA%3D%3D&w=1000&q=80);
+    height: 346px;
+}
+.banner3{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    background-image: url(https://s.yimg.com/uu/api/res/1.2/RP7X7ydzw0aLU63HKIz4FA--~B/aD02NzU7dz0xMjAwO2FwcGlkPXl0YWNoeW9u/https://media.zenfs.com/ko/ebc.net.tw/babb9515c76fbc7b41b6ac34aaa59088);
     height: 346px;
 }
 .banner-text{
@@ -187,6 +202,9 @@ footer{
     text-align: center;
     border-radius: 3px;
     box-shadow: 1px 3px 3.5px 1px rgba(0, 0, 0, 0.15);
+}
+.course-listItem:hover{
+    box-shadow: 1px 3px 3.5px 1px rgba(0, 0, 0, 0.3);
 }
 .course-listItem h2{
     font-size: 18px;
